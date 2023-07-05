@@ -11,6 +11,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
+    <style>
+        @keyframes fadeIn {
+          0% {opacity: 0;}
+          100% {opacity: 1;}
+        }
+
+        h1 {
+          animation: fadeIn 2s;
+        }
+
+        html, body {
+         scroll-behavior: smooth;
+       }
+
+       .custom-link {
+        color: black; /* Replace with the desired color value */   
+        text-decoration: none;;
+        }
+    </style>
     
     <Title>Kevin Rector</Title>
 
@@ -47,7 +66,7 @@
                     <h1>
                         <div class="display-2" style="font-size:50px; font-weight: 500; color: #5330ff;">Kevin Rector</div>
                     </h1>
-                    <p class="lead my-4" style="font-size: 150%; font-weight: 500;">Hello there! I am a soon to be software engineer currently in my final year at WGU for a degree in computer science. My goal is to work in back-end development after obtaining my degree. I always love solving problems and working on fun projects!</p>
+                    <p class="lead my-4" style="font-size: 150%; font-weight: 500;">Hello there! I am a soon to be software engineer currently in my final year at WGU for a degree in computer science from Kansas City, MO. My goal is to work in back-end development after obtaining my degree. I always love solving problems and working on fun projects!</p>
                 </div>
                 <div class="col-5 text-center d-none d-md-block">
                     <!--<img class="img-fluid" src="/source/images/KR_LOGO.png" alt="KR_LOGO">-->
@@ -87,7 +106,9 @@
                         Skills
                     </h1>
 
-                    <p class="lead my-100 mt-5" style="font-size: 130%; font-weight: 500;"> I have academic and personal experience with <span style="color: #5330ff">C++, HTML, CSS, and Python</span>. I am currently learning <span style="color: #5330ff">Java and Javascript</span>.  </p> 
+                    <p class="lead my-100 mt-5" style="font-size: 130%; font-weight: 500;"> I have experience with <span style="color: #5330ff">C++, HTML, CSS, PHP, MySQL and Python</span>. I am currently learning <span style="color: #5330ff">Java and Javascript</span>.  </p> 
+                    <p class="lead my-100 mt-1" style="font-size: 130%; font-weight: 500;"> I also have experience with <span style="color: #5330ff">MariaDB, nginx, and dbeaver </span>. I have learned a lot from selfhosting a lot on my personal servers.</p> 
+
                 </div>
             </div>
         </div>
@@ -100,7 +121,7 @@
     <!--Projects-->
     <section id="projects" class="full-height">
         
-        <div class="container-lg min-vh-50" style=" margin-top: 100px; max-width: 1700px; height: 100%;" id="projects">
+        <div class="container-lg min-vh-50 mb-5" style=" margin-top: 100px; max-width: 1700px; height: 100%;" id="projects">
 
             <!--Projects Title-->
            <div class="row justify-content-center align-items-center">
@@ -108,18 +129,19 @@
                 <div class="display-2 text-center" style="font-size: 50px; font-weight: 500; color: #5330ff; ">Projects</div>
             </h1>
             </div>
-
                 <!--Project Cards-->
                 <div class="card shadow-lg p-3 bg-white rounded text" style="max-width: 100%; margin-top:100px; margin-left: 15%; margin-right: 15%;">
-            
-                <img class="card-img-top" src="..." alt="Card image cap">
+                            
+                    <img class="card-img-top" src="/images/modding_skyrim.png" alt="Modding Guide image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Destiny Rep</h5>
-                        <p class="card-text" style="font-size:130%;">I am currently working on a web app that will pull from Bungies API for Destiny 2. This tool will allow the user to tracker their reputation with multiple factions in Destiny 2. Instead of having to go in game and check with vendors, this website will have all the information in one place!</p>
-    
+                        <h5 class="card-title text-center mb-4" style="color: #5330ff">Modding Tutorial Site</h5>
+                        <p class="card-text">I have deloped a detailed guide for modding specific games such as Skyrim and soon Starfield. The site includes setup guides for Mod Organizer and LOOT. Check it out at <a href="https://modding.kjrlab.com" target="_blank">modding.kjrlab.com</a>!</p>
+                        <p class="card-text">I created a database that I have self-hosted that houses data such as my mod list. This allows for easy updating and consistency. I mainly created this site to practice php, SQL, and learn how to display data from a maridadb server on to a website.</p>
                     </div>
                 </div>
-                <!-- CARD FOR LATER USE DO NOT DELETE
+
+
+                    <!-- CARD FOR LATER USE DO NOT DELETE
 
                 <div class="card shadow-lg p-3 bg-white rounded text" style="max-width: 100%; margin-top:100px; margin-left: 15%; margin-right: 15%">
             
@@ -135,19 +157,63 @@
         </div>
     </section>
     
-    <!-- Contact Information-->
-    <section id="Contact">
-        <div class="text-center" style="margin-top: 200px" id="contact">
-            <h1 style="font-size: 30px; font-weight: 500; color: #5330ff;">Contact</h1>
-            <div class="text-center m-5">
-                <p class="lead my-6" style="font-size: 130%;">kevinjrector@gmail.com</p>
-            </div>
-        </div>
-    </section>
-
+            <!-- Contact Information-->
+            <section id="Contact">
+                <div class="text-center mb-5" id="contact">
+                <h1 style="font-size: 30px; font-weight: 500; color: #5330ff;">Contact</h1>
+                <div class="text-center">
+                    <p class="lead my-6" style="font-size: 130%; color: black;">
+                    <a href="mailto:kevinjrector@kjrlab.com" class="custom-link">kevinjrector@kjrlab.com</a>
+                    <span style="margin: 0 10px;">|</span>
+                    <a href="https://github.com/toxicmuffin" class="custom-link" target=".blank">Github</a>
+                    </p>
+                </div>
+                </div>
+            </section>
+  
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+        });
+        </script>
+        
 </body>
 </html>
